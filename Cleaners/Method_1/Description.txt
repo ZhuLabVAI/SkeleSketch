@@ -1,0 +1,16 @@
+Works: ~70-90% of cases
+Accuracy: ~60-90% of cases
+
+Method:
+Attempt 1 - Combine various partial skeletons to get an accurate image
+Attempt 2 - Combine various partial blobs to get an accurate image
+
+Issues:
+- Connection of skeleton:
+	- Overlapping of endpoints result in random new endpoints when merging (incorrect connection)
+	- Random noise gets implemented due to being placed between useful aspects of the skeleton
+- Usability:
+	- Fixed to one base image currently, could result in even worse results from slight changes in image detail (pixel values / quality)
+- Still unable to get various aspects of detail
+	- Blurring removes clear details
+	- Unable to grab hard to see details
